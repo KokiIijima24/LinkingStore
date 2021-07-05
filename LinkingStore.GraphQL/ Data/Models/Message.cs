@@ -13,6 +13,6 @@ namespace LinkingStore.GraphQL.Data.Models
     [Required]
     public int LinkId { get; set; }
 
-    public Link Link { get; set; }
+    public WebSite WebSite { get; set; }
   }
 }
