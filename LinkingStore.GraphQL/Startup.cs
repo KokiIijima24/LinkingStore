@@ -20,7 +20,7 @@ namespace LinkingStore.GraphQL
 
       services
         .AddGraphQLServer()
-        .AddQueryType<Query>();
+        .AddQueryType<LinkInfoQuery>();
     }
 
     // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
