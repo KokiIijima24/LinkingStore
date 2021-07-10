@@ -11,7 +11,7 @@ namespace LinkingStore.GraphQL.Data
     {
     }
 
-    public DbSet<Link> Links { get; set; }
+    public DbSet<LinkInfo> LinkInfos { get; set; }
 
     public DbSet<Message> Messages { get; set; }
 
@@ -20,7 +20,7 @@ namespace LinkingStore.GraphQL.Data
 
       modelBuilder
         .Entity<Message>()
-        .HasOne(p => p.Link)
+        .HasOne(p => p.LinkInfo)
         .WithMany(p => p.Messages)
         .HasForeignKey(p => p.LinkId);
     }

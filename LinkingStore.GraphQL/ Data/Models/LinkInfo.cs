@@ -3,7 +3,7 @@ using System.ComponentModel.DataAnnotations;
 
 namespace LinkingStore.GraphQL.Data.Models
 {
-  public class Link
+  public class LinkInfo
   {
     [Key]
     public int Id { get; set; }
