@@ -1,3 +1,4 @@
+using System;
 using System.ComponentModel.DataAnnotations;
 
 namespace LinkingStore.GraphQL.Data.Models
@@ -5,13 +6,13 @@ namespace LinkingStore.GraphQL.Data.Models
   public class Message
   {
     [Key]
-    public int Id { get; set; }
+    public Guid Id { get; set; }
     [Required]
     public string Content { get; set; }
     [Required]
     public string CreatedBy { get; set; }
     [Required]
-    public int LinkId { get; set; }
+    public Guid LinkId { get; set; }
 
     public LinkInfo LinkInfo { get; set; }
   }
